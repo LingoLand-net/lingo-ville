@@ -14,9 +14,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap" rel="stylesheet" />
 
     <!-- Favicons -->
-    <link rel="icon" type="image/png" sizes="32x32" href="/logo.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/logo.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/logo.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/circle.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/circle.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/circle.png" />
 
     <style>
         /* ===== RESET ===== */
@@ -29,11 +29,11 @@
         }
 
         :root {
-            --teal: #00aba5;
+            --teal: #00ACA8;
             --teal-600: #008984;
             --teal-700: #006762;
             --teal-50: #e6f7f6;
-            --orange: #F8A233;
+            --orange: #F48C06;
             --orange-600: #e6821f;
             --slate-900: #0f172a;
             --slate-600: #475569;
@@ -140,7 +140,7 @@
             font-weight: 900;
             line-height: 1;
             letter-spacing: -4px;
-            background: linear-gradient(135deg, var(--teal) 0%, var(--orange) 100%);
+            background: linear-gradient(1deg, var(--teal) 0%, var(--orange) 100%);
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -295,12 +295,22 @@
             }
         }
 
-        @media (max-width: 380px) {
+        @media (max-width: 600px) {
             .error-code {
                 font-size: 4rem;
             }
             h1 {
                 font-size: 1.2rem;
+            }
+            .error-card {
+                padding: 32px 16px 24px;
+                box-shadow: 0 4px 16px rgba(252, 252, 252, 0);
+                border: 1px solid rgba(255, 255, 255, 0.4);
+                border-radius: 0px;
+                background-color: #ffffff;
+            }
+            body{
+                background-color: #ffffff !important;
             }
         }
     </style>
@@ -311,19 +321,18 @@
 
         <!-- Logo -->
         <a href="/" class="logo" aria-label="Lingo‑Ville home">
-            <img src="/logo.png" alt="" onerror="this.style.display='none'" />
-            <span>Lingo<span class="accent">Ville</span></span>
+            <img src="circle.png" alt="" onerror="this.style.display='none'" />
+            <span>Lin<span class="accent">go</span> Ville</span>
         </a>
 
         <!-- 404 Number -->
-        <div class="error-code">404</div>
+        <div class="error-code">Coming Soon!</div>
 
         <!-- Heading -->
-        <h1>Page not found</h1>
+        <h1>Where Innovation,<br> Meets Education</h1>
 
         <p class="subtitle">
-            The page you're looking for doesn't exist, has been moved, or the link is broken.
-            If you were trying to verify a certificate, use the search box below.
+            If you were trying to verify a certificate, use the button below.
         </p>
 
         <div class="divider"></div>
@@ -336,19 +345,13 @@
                     <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                 </svg>
             </a>
-            <a href="https://lingo-ville.com" class="btn btn-secondary">
-                <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                </svg>
-                <span>Main Website</span>
-            </a>
         </div>
 
         <!-- Footer Note -->
         <div class="footer-note">
-            Need help?
+            Need help?<br>
             <a href="mailto:contact@lingo-ville.com">contact@lingo-ville.com</a>
-            · +216 22 571 291
+            <br>+216 22 571 291
             <br />
             Sfax, Tunisia
         </div>
